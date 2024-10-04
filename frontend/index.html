@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Task Manager</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="theme-toggle">
+            <button id="toggle-theme">🌙</button>
+        </div>
+
+        <!-- Task input field and button -->
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter a new task" />
+            <button id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        
+        <!-- Task list -->
+        <ul id="task-list" class="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.task-list {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #d6d9db; /* Highlight on hover */
+}
+
+.task-list li button {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.task-list li button:hover {
+    background-color: #c9302c;
+}
+
+.theme-toggle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .container {
+    background: #444;
+}
+
+body.dark-mode .task-list li {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #666;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
